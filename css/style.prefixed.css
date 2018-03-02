@@ -136,5 +136,27 @@ p {
   .content-wrap, #section-b ul {
     grid-column: 2/4;
   }
+  #section-a .content-text {
+    -webkit-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 2em;
+            column-gap: 2em;
+  }
+  #section-a .content-text p {
+    padding-top: 0;
+  }
+  #section-b ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #section-b ul li {
+    width: 31%;
+  }
+  .box, #main-footer div {
+    -ms-grid-column: span 2;
+        grid-column: span 2;
+  }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
